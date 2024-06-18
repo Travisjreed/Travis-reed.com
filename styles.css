@@ -8,22 +8,13 @@ body {
     transition: background-color 0.3s, color 0.3s, filter 0.3s;
 }
 
-header, main, footer {
-    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
-    margin: 0;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 header {
     background-color: rgba(27, 27, 27, 0.8); /* Slightly darker for header */
     text-align: center;
+    padding: 20px;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -32,27 +23,35 @@ header h1 {
     margin: 0;
     color: #76c7c0;
     font-size: 2rem;
+    text-align: center;
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-nav ul li {
+.nav-links li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-links li a {
     color: #76c7c0;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #64b2a5;
 }
 
@@ -89,82 +88,18 @@ section {
     padding: 100px 20px;
 }
 
-.welcome-message {
-    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.project {
-    background-color: rgba(44, 44, 44, 0.8); /* 80% opaque */
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.05);
-}
-
-form {
+.welcome-message, #about-me, #skills, #featured-projects {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
-
-label {
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(44, 44, 44, 0.8); /* 80% opaque */
-    color: #e0e0e0;
-}
-
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #76c7c0;
-    color: #121212;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #64b2a5;
-}
-
-footer {
-    background-color: rgba(27, 27, 27, 0.8); /* 80% opaque */
-    color: #e0e0e0;
-    text-align: center;
-    padding: 10px;
-}
-
-.dark-mode {
-    filter: invert(1) hue-rotate(180deg);
-}
-
-.dark-mode-toggle i {
-    transition: color 0.3s;
-}
-
-/* Centering title texts */
-#about-me h2, #skills h2, #featured-projects h2 {
-    text-align: center;
-}
-
-#about-me, #skills, #featured-projects {
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 20px;
     background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
     border-radius: 10px;
+    max-width: 80%; /* Adjust as needed */
+    text-align: center;
+    box-sizing: border-box;
 }
 
 #skills ul {
@@ -222,17 +157,43 @@ footer {
 .project .button:hover {
     background-color: #64b2a5;
 }
-/* Container styles */
-.welcome-message, #about-me, #skills, #featured-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
-    border-radius: 10px;
-    max-width: 80%; /* Adjust as needed */
+
+footer {
+    background-color: rgba(27, 27, 27, 0.8); /* 80% opaque */
+    color: #e0e0e0;
     text-align: center;
-    box-sizing: border-box;
+    padding: 10px;
+}
+
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.dark-mode-toggle i {
+    transition: color 0.3s;
+}
+
+/* Centering title texts */
+#about-me h2, #skills h2, #featured-projects h2 {
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .welcome-message, #about-me, #skills, #featured-projects {
+        max-width: 95%;
+    }
+
+    #hero {
+        padding: 50px 20px;
+    }
 }
