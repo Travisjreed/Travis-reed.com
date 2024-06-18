@@ -222,3 +222,17 @@ footer {
 .project .button:hover {
     background-color: #64b2a5;
 }
+/* Container styles */
+.welcome-message, #about-me, #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
+    border-radius: 10px;
+    max-width: 80%; /* Adjust as needed */
+    text-align: center;
+    box-sizing: border-box;
+}
