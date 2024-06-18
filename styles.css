@@ -1,0 +1,224 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('media/dark-jungle-background.jpg') no-repeat center center/cover;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s, filter 0.3s;
+}
+
+header, main, footer {
+    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: rgba(27, 27, 27, 0.8); /* Slightly darker for header */
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    color: #76c7c0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #76c7c0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #64b2a5;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #76c7c0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    color: #64b2a5;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 20px 0;
+}
+
+#hero {
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.welcome-message {
+    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project {
+    background-color: rgba(44, 44, 44, 0.8); /* 80% opaque */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(44, 44, 44, 0.8); /* 80% opaque */
+    color: #e0e0e0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76c7c0;
+    color: #121212;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #64b2a5;
+}
+
+footer {
+    background-color: rgba(27, 27, 27, 0.8); /* 80% opaque */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+}
+
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.dark-mode-toggle i {
+    transition: color 0.3s;
+}
+
+/* Centering title texts */
+#about-me h2, #skills h2, #featured-projects h2 {
+    text-align: center;
+}
+
+#about-me, #skills, #featured-projects {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(18, 18, 18, 0.8); /* 80% opaque */
+    border-radius: 10px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    margin: 10px;
+    background-color: rgba(44, 44, 44, 0.8); /* 80% opaque */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+}
+
+#skills li i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.project {
+    background-color: rgba(44, 44, 44, 0.8); /* 80% opaque */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project .button {
+    padding: 10px 20px;
+    background-color: #76c7c0;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project .button:hover {
+    background-color: #64b2a5;
+}

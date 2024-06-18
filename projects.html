@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Travis Reed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Travis Reed</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+    <main>
+        <section id="projects" class="container" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Personal Health Dashboard</h3>
+                <p>An AI-assisted dashboard that helps users track their fitness and nutrition goals, providing personalized meal suggestions based on macros and calories.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Banking Website</h3>
+                <p>A professional banking website developed using HTML, CSS, and JavaScript for the frontend, with a Microsoft-based backend.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: Snow Scraper App</h3>
+                <p>An on-demand snow removal app that connects users with local snow removal experts, featuring job searching, user requests, and a rating system.</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travis Reed</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const icon = document.querySelector('.dark-mode-toggle i');
+            icon.classList.toggle('fa-sun');
+            icon.classList.toggle('fa-moon');
+        }
+    </script>
+</body>
+</html>

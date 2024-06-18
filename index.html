@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Reed - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Travis Reed</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="welcome-message">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>Explore my software development projects in a jungle of creativity and innovation.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-me" class="container" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>I am a software developer and nature enthusiast with a passion for creating innovative solutions. With experience in various programming languages and technologies, I aim to deliver impactful projects that solve real-world problems.</p>
+        </section>
+        <section id="skills" class="container" data-aos="fade-up">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fas fa-code"></i> JavaScript, HTML, CSS</li>
+                <li><i class="fas fa-database"></i> SQL, NoSQL</li>
+                <li><i class="fas fa-server"></i> Node.js, Python, Go</li>
+                <li><i class="fas fa-cloud"></i> Cloud Services, Kubernetes</li>
+                <li><i class="fas fa-project-diagram"></i> Microservices Architecture</li>
+            </ul>
+        </section>
+        <section id="featured-projects" class="container" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <div class="project">
+                <h3>Personal Health Dashboard</h3>
+                <p>An AI-assisted dashboard that helps users track their fitness and nutrition goals, providing personalized meal suggestions based on macros and calories.</p>
+                <a href="projects.html" class="button">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Banking Website</h3>
+                <p>A professional banking website developed using HTML, CSS, and JavaScript for the frontend, with a Microsoft-based backend.</p>
+                <a href="projects.html" class="button">View Project</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travis Reed</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const icon = document.querySelector('.dark-mode-toggle i');
+            icon.classList.toggle('fa-sun');
+            icon.classList.toggle('fa-moon');
+        }
+    </script>
+</body>
+</html>
