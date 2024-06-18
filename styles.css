@@ -223,7 +223,7 @@ footer {
     background-color: #64b2a5;
 }
 /* Container styles */
-.welcome-message, #about-me, #skills {
+.welcome-message, #about-me, #skills, #featured-projects {
     display: flex;
     justify-content: center;
     align-items: center;
